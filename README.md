@@ -35,4 +35,4 @@
 - it's been a while since the last time I made any page, so this challenge was helpful to recap html and css 
 ## Acknowledgments
 
-A big thank you to anyone providing feedback on my <a href="">solution</a>. It definitely helps to find new ways to code and find easier solutions! 
+A big thank you to anyone providing feedback on my <a href="https://www.frontendmentor.io/solutions/product-preview-card-component-egK-0TBggC">solution</a>. It definitely helps to find new ways to code and find easier solutions! 
