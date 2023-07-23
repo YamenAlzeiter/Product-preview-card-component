@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+:root{
+    
+--Dark-cyan: hsl(158, 36%, 37%);
+--Cream: hsl(30, 38%, 92%);
+--Very-dark-blue: hsl(212, 21%, 14%);
+--Dark-grayish-blue: hsl(228, 12%, 48%);
+--White: hsl(0, 0%, 100%);
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  font-size: inherit;
+  font-family: "Montserrat";
+  line-height: inherit;
+  border: none;
+  border-radius: .5rem;
+  padding: .8rem;
+  margin-top: .5rem;
+font-weight: 700;
+color: var(--White);
+background: var(--Dark-cyan);
+display: flex;
+gap: .8rem;
+justify-content: center;
+;
+font-size: 14px;
+}
+button::before{
+    content: url(images/icon-cart.svg);
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+body{
+    font-family: 'Fraunces', serif, 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: var(--Cream);
+}
+.container{
+    background: var(--White);
+    border-radius: .6rem;
+    overflow: hidden;
+    width: 37.5rem;
+    display: flex;
+}
+.preview-section{
+    padding: 2rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+.img-side{
+    width: 50%;
+}
+
+h1{
+    font-family: "Montserrat";
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: .3rem;
+    color: var(--Dark-grayish-blue);
+}
+h2{
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-bottom: .2rem;
+    color: var(--Very-dark-blue);
+}
+.describtion{
+    font-family: "Montserrat";
+    font-weight: 500;
+    color: var(--Dark-grayish-blue);
+    font-size: 14px;
+    line-height: 1.45rem;
+}
+.price{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: .2rem;
+    align-items: center;
+}
+.price-after-discount{
+    font-size: 2rem;
+    color: var(--Dark-cyan);
+}
+.price-before-discount{
+    text-decoration-line: line-through;
+    font-size: 13px;
+    font-family: "Montserrat";
+    color: var(--Dark-grayish-blue);
+}
+
+@media screen and (max-width: 375px){
+    .container{
+        flex-direction: column;
+    }
+    .img-side{
+        width: 100%;
+    }
+    .preview-section{
+        width: 100%;
+    }
+}
